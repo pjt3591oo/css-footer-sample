@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    html {
+      position: relative;
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100%;
+    }
+
+    #footer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      background: blue;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <div id="container"> </div>
+  <div id="footer">
+    footer 입니다.
+  </div>
+
+  <script>
+    const footerDom = document.getElementById('container');
+    for (i = 0; i < 10; i++) {
+      let p = document.createElement("p")
+      p.append(`${i}번째 p`);
+      footerDom.append(p)
+    }
+  </script>
+</body>
+
+</html>

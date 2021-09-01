@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+      }
+      #footer {
+        width: 100%;
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"> </div>
+    <div id="footer">
+      footer 입니다.
+    </div>
+
+    <script>
+      const footerDom = document.getElementById('container');
+      for(i=0; i<10; i++){
+        let p = document.createElement("p")
+        p.append(`${i}번째 p`);
+        footerDom.append(p)
+      }
+    </script>
+  </body>
+</html>
